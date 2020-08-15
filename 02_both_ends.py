@@ -9,7 +9,10 @@ for menor que 2, retorne uma string vazia.
 
 def both_ends(s):
     # +++ SUA SOLUÇÃO +++
-    return
+    both = s[:2] + s[-2:]
+    
+    return both.replace('a', '')
+
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
