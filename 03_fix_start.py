@@ -15,9 +15,6 @@ onde todas as instancias de stra foram substituidas por strb.
 
 def fix_start(s):
     # +++ SUA SOLUÇÃO +++
-    fix = s[0]
-    start = s[1:]
-    fix_start = start.replace(fix , '*')
     return s[0] + s[1:].replace(s[0], '*')
 
 
