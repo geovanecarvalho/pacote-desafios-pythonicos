@@ -13,10 +13,10 @@ Retorne o resultado da string.
 def verbing(s):
     # +++ SUA SOLUÇÃO +++
     if len(s) >= 3:
-        verbo = s + 'ing'
+        verbo = ''.join([s,'ing'])
         
-        if s[-3:] == 'ing':
-            verbo = s + 'ly'
+        if s.endswith('ing'):
+            verbo = ''.join([ s, 'ly'])
     else:
         verbo = 'do'
     
