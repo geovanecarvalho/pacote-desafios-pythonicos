@@ -12,8 +12,17 @@ Retorne o resultado da string.
 
 def verbing(s):
     # +++ SUA SOLUÇÃO +++
-    return
+    if len(s) >= 3:
+        verbo = s + 'ing'
+        
+        if s[-3:] == 'ing':
+            verbo = s + 'ly'
+    else:
+        verbo = 'do'
+    
+    return verbo
 
+    
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
@@ -37,5 +46,7 @@ def test(f, in_, expected):
 if __name__ == '__main__':
     # Testes que verificam o resultado do seu código em alguns cenários.
     test(verbing, 'hail', 'hailing')
+    test(verbing, 'walk', 'walking')
     test(verbing, 'swiming', 'swimingly')
+    test(verbing, 'speaking', 'speakingly')
     test(verbing, 'do', 'do')
